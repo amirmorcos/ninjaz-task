@@ -1,0 +1,6 @@
+2024-02-29 16:08:15.717 xcodebuild[19755:304966] Writing error result bundle to /var/folders/d1/8gy4h2cs6037qhhqq4qrbgy40000gn/T/ResultBundle_2024-29-02_16-08-0015.xcresult
+xcodebuild: error: Unable to find a destination matching the provided destination specifier:
+		{ id:6BD91A8F-2C5C-43C8-90ED-234B36A56550 }
+
+	Ineligible destinations for the "ninjaztask" scheme:
+		{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device, error:iOS 17.2 is not installed. To use with Xcode, first download and install the platform }

@@ -1,0 +1,6 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/amirmorcos/Documents/ninjaz-task/ios/ninjaztask.xcworkspace -configuration Debug -scheme ninjaztask -destination id=6BD91A8F-2C5C-43C8-90ED-234B36A56550
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
