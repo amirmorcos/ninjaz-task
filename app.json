@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "ninjaz-task",
+    "slug": "ninjaz-task",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "ninjaz-task"
+}
