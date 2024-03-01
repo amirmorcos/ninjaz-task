@@ -4,6 +4,7 @@ import { PostItemProps } from "./types";
 import { Icon, Avatar } from "../../atoms";
 
 import moment from "moment";
+import AppImage from "../AppImage/AppImage";
 
 const PostItem = ({ item }: PostItemProps) => {
   return (
@@ -25,12 +26,7 @@ const PostItem = ({ item }: PostItemProps) => {
         <Text numberOfLines={2} ellipsizeMode="tail">
           {item.text}
         </Text>
-        <Image
-          source={{
-            uri: item.image,
-          }}
-          style={styles.postImage}
-        />
+        <AppImage image={item.image} />
         <View style={styles.container}>
           <Icon name="heart-outline" color="GREY" />
           <Text style={styles.likes}>{item.likes}</Text>

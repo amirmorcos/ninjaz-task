@@ -1,6 +1,7 @@
-import { Image, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import { AvatarProps } from "./types";
 import styles from "./styles";
+import FastImage from "react-native-fast-image";
 
 const Avatar = ({
   firstName,
@@ -27,7 +28,7 @@ const Avatar = ({
 
   return (
     <View style={overrideContainerStyle}>
-      <Image source={{ uri: image }} style={styles.container} />
+      <FastImage source={{ uri: image }} style={styles.container} />
     </View>
   );
 };

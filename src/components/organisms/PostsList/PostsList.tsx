@@ -1,4 +1,4 @@
-import { FlatList } from "react-native";
+import { FlatList, RefreshControl } from "react-native";
 import { Post } from "../../../models/Post";
 import styles from "./styles";
 import { PostItem } from "../../molecules";
@@ -167,6 +167,9 @@ const PostsList = () => {
       ItemSeparatorComponent={() => <Divider />}
       style={styles.list}
       contentContainerStyle={styles.contentContainer}
+      refreshControl={
+        <RefreshControl refreshing={false} onRefresh={() => {}} />
+      }
     />
   );
 };
