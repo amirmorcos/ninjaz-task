@@ -1,4 +1,4 @@
-import { Image, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import styles from "./styles";
 import { PostItemProps } from "./types";
 import { Icon, Avatar } from "../../atoms";
@@ -27,6 +27,13 @@ const PostItem = ({ item }: PostItemProps) => {
           {item.text}
         </Text>
         <AppImage image={item.image} />
+        {item.tags.length !== 0 && (
+          <View style={styles.tagContainer}>
+            {item.tags.map((item, index) => (
+              <Text key={index}>#{item} </Text>
+            ))}
+          </View>
+        )}
         <View style={styles.container}>
           <Icon name="heart-outline" color="GREY" />
           <Text style={styles.likes}>{item.likes}</Text>

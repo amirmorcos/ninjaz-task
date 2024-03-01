@@ -33,4 +33,9 @@ export default StyleSheet.create({
     color: Colors.DARKGREY,
     marginTop: verticalScale(2),
   },
+  tagContainer: {
+    flexDirection: "row",
+    marginBottom: verticalScale(10),
+    alignItems: "center",
+  },
 });
