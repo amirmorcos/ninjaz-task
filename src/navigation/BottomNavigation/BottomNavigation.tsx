@@ -5,6 +5,7 @@ import NotificationScreen from "../../screens/NotificationScreen/NotificationScr
 import SettingsScreen from "../../screens/SettingsScreen/SettingsScreen";
 import Colors from "../../theme/colors";
 import { Icon } from "../../components/atoms";
+import styles from "./styles";
 
 const BottomTab = createBottomTabNavigator();
 
@@ -14,23 +15,26 @@ const BottomNavigation = () => (
       name="Posts"
       component={PostsScreen}
       options={{
+        tabBarLabelStyle: styles.label,
         tabBarActiveTintColor: Colors.BLACK,
         tabBarIcon: () => <Icon name="home" color="BLUE" />,
       }}
     />
     <BottomTab.Screen
-      name="Notifications"
+      name="Tab2"
       component={NotificationScreen}
       options={{
-        tabBarActiveTintColor: "black",
+        tabBarLabelStyle: styles.label,
+        tabBarActiveTintColor: Colors.BLACK,
         tabBarIcon: () => <Icon name="notifications" color="BLUE" />,
       }}
     />
     <BottomTab.Screen
-      name="Settings"
+      name="Tab3"
       component={SettingsScreen}
       options={{
-        tabBarActiveTintColor: "black",
+        tabBarLabelStyle: styles.label,
+        tabBarActiveTintColor: Colors.BLACK,
         tabBarIcon: () => <Icon name="settings" color="BLUE" />,
       }}
     />

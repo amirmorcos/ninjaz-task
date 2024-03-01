@@ -1,8 +1,8 @@
 import React from "react";
-import { View } from "react-native";
+import PostsList from "../../components/organisms/PostsList/PostsList";
 
 const PostsScreen = () => {
-  return <View />;
+  return <PostsList />;
 };
 
 export default PostsScreen;
