@@ -1,0 +1,599 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders  correctly 1`] = `
+<View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "borderRadius": undefined,
+              "height": undefined,
+              "width": undefined,
+            },
+          ]
+        }
+      >
+        <FastImageView
+          defaultSource={null}
+          resizeMode="cover"
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "paddingHorizontal": undefined,
+        }
+      }
+    >
+      <Text>
+        Vanessa
+         
+        Ramos
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#A9A9A9",
+            "marginTop": undefined,
+          }
+        }
+      >
+        2 months ago
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginTop": undefined,
+        "paddingStart": undefined,
+      }
+    }
+  >
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={2}
+    >
+      Dog in a forest at sunset dog in forest with sun r...
+    </Text>
+    <View
+      style={
+        [
+          {
+            "overflow": "hidden",
+          },
+          [
+            {
+              "borderRadius": undefined,
+              "height": undefined,
+              "marginVertical": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <FastImageView
+        defaultSource={null}
+        resizeMode="cover"
+        style={
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Icon
+        color="#B4B4B8"
+        name="heart-outline"
+        size={20}
+      />
+      <Text
+        style={
+          {
+            "marginStart": undefined,
+          }
+        }
+      >
+        0
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders  correctly with tags 1`] = `
+<View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "borderRadius": undefined,
+              "height": undefined,
+              "width": undefined,
+            },
+          ]
+        }
+      >
+        <FastImageView
+          defaultSource={null}
+          resizeMode="cover"
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "paddingHorizontal": undefined,
+        }
+      }
+    >
+      <Text>
+        Vanessa
+         
+        Ramos
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#A9A9A9",
+            "marginTop": undefined,
+          }
+        }
+      >
+        2 months ago
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginTop": undefined,
+        "paddingStart": undefined,
+      }
+    }
+  >
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={2}
+    >
+      Dog in a forest at sunset dog in forest with sun r...
+    </Text>
+    <View
+      style={
+        [
+          {
+            "overflow": "hidden",
+          },
+          [
+            {
+              "borderRadius": undefined,
+              "height": undefined,
+              "marginVertical": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <FastImageView
+        defaultSource={null}
+        resizeMode="cover"
+        style={
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": undefined,
+        }
+      }
+    >
+      <Text>
+        #
+        dog
+         
+      </Text>
+      <Text>
+        #
+        animal
+         
+      </Text>
+      <Text>
+        #
+        golden retriever
+         
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Icon
+        color="#B4B4B8"
+        name="heart-outline"
+        size={20}
+      />
+      <Text
+        style={
+          {
+            "marginStart": undefined,
+          }
+        }
+      >
+        0
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly 1`] = `
+<View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "borderRadius": undefined,
+              "height": undefined,
+              "width": undefined,
+            },
+          ]
+        }
+      >
+        <FastImageView
+          defaultSource={null}
+          resizeMode="cover"
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "paddingHorizontal": undefined,
+        }
+      }
+    >
+      <Text>
+        Vanessa
+         
+        Ramos
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#A9A9A9",
+            "marginTop": undefined,
+          }
+        }
+      >
+        2 months ago
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginTop": undefined,
+        "paddingStart": undefined,
+      }
+    }
+  >
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={2}
+    >
+      Dog in a forest at sunset dog in forest with sun r...
+    </Text>
+    <View
+      style={
+        [
+          {
+            "overflow": "hidden",
+          },
+          [
+            {
+              "borderRadius": undefined,
+              "height": undefined,
+              "marginVertical": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <FastImageView
+        defaultSource={null}
+        resizeMode="cover"
+        style={
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Icon
+        color="#B4B4B8"
+        name="heart-outline"
+        size={20}
+      />
+      <Text
+        style={
+          {
+            "marginStart": undefined,
+          }
+        }
+      >
+        0
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly with tags 1`] = `
+<View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "borderRadius": undefined,
+              "height": undefined,
+              "width": undefined,
+            },
+          ]
+        }
+      >
+        <FastImageView
+          defaultSource={null}
+          resizeMode="cover"
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "paddingHorizontal": undefined,
+        }
+      }
+    >
+      <Text>
+        Vanessa
+         
+        Ramos
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#A9A9A9",
+            "marginTop": undefined,
+          }
+        }
+      >
+        2 months ago
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "marginTop": undefined,
+        "paddingStart": undefined,
+      }
+    }
+  >
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={2}
+    >
+      Dog in a forest at sunset dog in forest with sun r...
+    </Text>
+    <View
+      style={
+        [
+          {
+            "overflow": "hidden",
+          },
+          [
+            {
+              "borderRadius": undefined,
+              "height": undefined,
+              "marginVertical": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <FastImageView
+        defaultSource={null}
+        resizeMode="cover"
+        style={
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": undefined,
+        }
+      }
+    >
+      <Text>
+        #
+        dog
+         
+      </Text>
+      <Text>
+        #
+        animal
+         
+      </Text>
+      <Text>
+        #
+        golden retriever
+         
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Icon
+        color="#B4B4B8"
+        name="heart-outline"
+        size={20}
+      />
+      <Text
+        style={
+          {
+            "marginStart": undefined,
+          }
+        }
+      >
+        0
+      </Text>
+    </View>
+  </View>
+</View>
+`;

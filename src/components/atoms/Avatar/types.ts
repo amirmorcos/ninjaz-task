@@ -5,4 +5,5 @@ export interface AvatarProps {
   lastName: string;
   image: string;
   overrideContainerStyle?: StyleProp<ViewStyle>;
+  accessibilityLabel?: string;
 }
