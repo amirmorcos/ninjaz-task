@@ -8,6 +8,7 @@ const Avatar = ({
   lastName,
   image,
   overrideContainerStyle,
+  accessibilityLabel,
 }: AvatarProps) => {
   const initials = `${firstName.charAt(0).toLocaleUpperCase()} ${lastName
     .charAt(0)
@@ -16,19 +17,30 @@ const Avatar = ({
   if (!image)
     return (
       <View
+        accessibilityLabel=""
         style={[
           styles.container,
           styles.initialsContainer,
           overrideContainerStyle,
         ]}
       >
-        <Text>{initials}</Text>
+        <Text
+          accessibilityLabel={accessibilityLabel}
+          testID={accessibilityLabel}
+        >
+          {initials}
+        </Text>
       </View>
     );
 
   return (
     <View style={overrideContainerStyle}>
-      <FastImage source={{ uri: image }} style={styles.container} />
+      <FastImage
+        accessibilityLabel={accessibilityLabel}
+        testID={accessibilityLabel}
+        source={{ uri: image }}
+        style={styles.container}
+      />
     </View>
   );
 };

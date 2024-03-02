@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders  correctly 1`] = `
+<View
+  style={
+    {
+      "borderColor": "#B4B4B8",
+      "borderWidth": undefined,
+      "marginVertical": undefined,
+    }
+  }
+/>
+`;
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    {
+      "borderColor": "#B4B4B8",
+      "borderWidth": undefined,
+      "marginVertical": undefined,
+    }
+  }
+/>
+`;

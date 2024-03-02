@@ -6,6 +6,7 @@ import { Post } from "../../../models/Post";
 import { Divider, Loader } from "../../atoms";
 import { PostItem } from "../../molecules";
 import styles from "./styles";
+import { TestIds } from "./ids";
 
 const PostsList = () => {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -48,7 +49,13 @@ const PostsList = () => {
     <FlatList
       data={posts}
       showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => <PostItem key={item.id} item={item} />}
+      renderItem={({ item, index }) => (
+        <PostItem
+          accessibilityLabel={`${TestIds.postItem}-${index}`}
+          key={item.id}
+          item={item}
+        />
+      )}
       ItemSeparatorComponent={() => <Divider />}
       style={styles.list}
       contentContainerStyle={styles.contentContainer}

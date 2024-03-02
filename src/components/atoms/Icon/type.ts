@@ -4,4 +4,5 @@ export interface IconProps {
   name: string;
   color: keyof typeof Colors;
   size?: number;
+  accessibilityLabel?: string;
 }
