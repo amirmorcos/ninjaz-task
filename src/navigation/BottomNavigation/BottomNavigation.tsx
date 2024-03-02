@@ -1,10 +1,10 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import React from "react";
-import PostsScreen from "../../screens/PostsScreen/PostsScreen";
+import { Icon } from "../../components/atoms";
 import NotificationScreen from "../../screens/NotificationScreen/NotificationScreen";
+import PostsScreen from "../../screens/PostsScreen/PostsScreen";
 import SettingsScreen from "../../screens/SettingsScreen/SettingsScreen";
 import Colors from "../../theme/colors";
-import { Icon } from "../../components/atoms";
 import styles from "./styles";
 
 const BottomTab = createBottomTabNavigator();

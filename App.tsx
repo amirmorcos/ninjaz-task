@@ -7,18 +7,23 @@
 
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
+import Toast from "react-native-toast-message";
 
-import BottomNavigation from "./src/navigation/BottomNavigation/BottomNavigation";
 import { Provider } from "react-redux";
-import { store } from "./src/redux/store";
+import BottomNavigation from "./src/navigation/BottomNavigation/BottomNavigation";
+import { persistor, store } from "./src/redux/store";
+import { PersistGate } from "redux-persist/integration/react";
 
 function App(): React.JSX.Element {
   return (
-    <Provider store={store}>
-      <NavigationContainer>
-        <BottomNavigation />
-      </NavigationContainer>
-    </Provider>
+    <PersistGate loading={null} persistor={persistor}>
+      <Provider store={store}>
+        <NavigationContainer>
+          <BottomNavigation />
+        </NavigationContainer>
+        <Toast />
+      </Provider>
+    </PersistGate>
   );
 }
 

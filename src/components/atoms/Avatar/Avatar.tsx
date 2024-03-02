@@ -1,7 +1,7 @@
 import { Text, View } from "react-native";
-import { AvatarProps } from "./types";
-import styles from "./styles";
 import FastImage from "react-native-fast-image";
+import styles from "./styles";
+import { AvatarProps } from "./types";
 
 const Avatar = ({
   firstName,

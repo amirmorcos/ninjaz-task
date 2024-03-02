@@ -1,10 +1,11 @@
-import { FlatList, RefreshControl } from "react-native";
-import styles from "./styles";
-import { PostItem } from "../../molecules";
-import { Divider, Loader } from "../../atoms";
-import { useLazyGetPostsListQuery } from "../../../api/postsApi";
 import { useEffect, useState } from "react";
+import { FlatList, RefreshControl } from "react-native";
+import Toast from "react-native-toast-message";
+import { useLazyGetPostsListQuery } from "../../../api/postsApi";
 import { Post } from "../../../models/Post";
+import { Divider, Loader } from "../../atoms";
+import { PostItem } from "../../molecules";
+import styles from "./styles";
 
 const PostsList = () => {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -18,12 +19,19 @@ const PostsList = () => {
         limit: 10,
         page: newPage,
       });
+
       if (!refetch) {
         setPage(page + 1);
       }
       setIsLoading(isLoading);
       setPosts([...posts, ...(data?.data || [])]);
-    } catch (e) {}
+    } catch (e) {
+      Toast.show({
+        type: "error",
+        text1: "Something went wrong. Please try again later",
+        position: "bottom",
+      });
+    }
   };
 
   const renderFooter = () => <Loader />;

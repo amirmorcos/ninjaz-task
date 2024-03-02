@@ -1,8 +1,8 @@
 import { Text, View } from "react-native";
+import { Avatar, Icon } from "../../atoms";
+import { AppImage } from "../../molecules";
 import styles from "./styles";
 import { PostItemProps } from "./types";
-import { Icon, Avatar } from "../../atoms";
-import { AppImage } from "../../molecules";
 
 import moment from "moment";
 

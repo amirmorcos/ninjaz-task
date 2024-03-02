@@ -1,15 +1,30 @@
 import { configureStore } from "@reduxjs/toolkit";
-import PostsReducer from "./postsSlice";
 import { postsApi } from "../api/postsApi";
 import { setupListeners } from "@reduxjs/toolkit/query";
+import { persistStore, persistReducer } from "redux-persist";
+import { combineReducers } from "redux";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
+const persistConfig = {
+  key: "root",
+  storage: AsyncStorage,
+};
+
+const combinedReducers = combineReducers({
+  [postsApi.reducerPath]: postsApi.reducer,
+});
+
+const persistedReducer = persistReducer(persistConfig, combinedReducers);
 
 export const store = configureStore({
-  reducer: {
-    [postsApi.reducerPath]: postsApi.reducer,
-  },
+  reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(postsApi.middleware),
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }).concat(postsApi.middleware),
 });
+
+export const persistor = persistStore(store);
 
 setupListeners(store.dispatch);
 
