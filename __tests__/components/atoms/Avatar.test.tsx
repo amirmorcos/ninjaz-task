@@ -8,9 +8,9 @@ jest.mock("react-native-toast-message", () => ({
   hide: jest.fn(),
 }));
 jest.mock("react-native-size-matters", () => ({
-  scale: () => {},
-  verticalScale: () => {},
-  moderateScale: () => {},
+  scale: jest.fn(),
+  verticalScale: jest.fn(),
+  moderateScale: jest.fn(),
 }));
 
 test("renders correctly", () => {
