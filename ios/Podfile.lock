@@ -1125,6 +1125,10 @@ PODS:
     - React-jsi (= 0.73.5)
     - React-logger (= 0.73.5)
     - React-perflogger (= 0.73.5)
+  - RealmJS (12.6.1):
+    - React
+  - RNCAsyncStorage (1.22.3):
+    - React-Core
   - RNFastImage (8.6.3):
     - React-Core
     - SDWebImage (~> 5.11.1)
@@ -1220,6 +1224,8 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RealmJS (from `../node_modules/realm`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNFastImage (from `../node_modules/react-native-fast-image`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -1342,6 +1348,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RealmJS:
+    :path: "../node_modules/realm"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   RNFastImage:
     :path: "../node_modules/react-native-fast-image"
   RNScreens:
@@ -1413,6 +1423,8 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 814b644a5f456c7df1fba7bcd9914707152527c6
   React-utils: 987a4526a2fc0acdfaf87888adfe0bf9d0452066
   ReactCommon: 2947b0bffd82ea0e58ca7928881152d4c6dae9af
+  RealmJS: 0e6e1db425ec23d5197e6d3fbf825147c7fdb916
+  RNCAsyncStorage: 10591b9e0a91eaffee14e69b3721009759235125
   RNFastImage: 5c9c9fed9c076e521b3f509fe79e790418a544e8
   RNScreens: 17e2f657f1b09a71ec3c821368a04acbb7ebcb46
   RNVectorIcons: 73ab573085f65a572d3b6233e68996d4707fd505
