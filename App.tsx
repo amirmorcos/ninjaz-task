@@ -7,9 +7,10 @@
 
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
+import Toast from "react-native-toast-message";
 
-import BottomNavigation from "./src/navigation/BottomNavigation/BottomNavigation";
 import { Provider } from "react-redux";
+import BottomNavigation from "./src/navigation/BottomNavigation/BottomNavigation";
 import { store } from "./src/redux/store";
 
 function App(): React.JSX.Element {
@@ -18,6 +19,7 @@ function App(): React.JSX.Element {
       <NavigationContainer>
         <BottomNavigation />
       </NavigationContainer>
+      <Toast />
     </Provider>
   );
 }

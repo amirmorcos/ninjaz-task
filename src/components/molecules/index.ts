@@ -1,4 +1,4 @@
-import PostItem from "./PostItem/PostItem";
 import AppImage from "./AppImage/AppImage";
+import PostItem from "./PostItem/PostItem";
 
-export { PostItem, AppImage };
+export { AppImage, PostItem };
