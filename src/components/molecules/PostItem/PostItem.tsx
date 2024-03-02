@@ -2,13 +2,13 @@ import { Text, View } from "react-native";
 import styles from "./styles";
 import { PostItemProps } from "./types";
 import { Icon, Avatar } from "../../atoms";
+import { AppImage } from "../../molecules";
 
 import moment from "moment";
-import AppImage from "../AppImage/AppImage";
 
-const PostItem = ({ item }: PostItemProps) => {
+const PostItem = ({ item, overrideContainerStyle }: PostItemProps) => {
   return (
-    <View>
+    <View style={overrideContainerStyle}>
       <View style={styles.container}>
         <Avatar
           firstName={item?.owner?.firstName ?? ""}
